@@ -1,7 +1,17 @@
-# Java Demo
+# Java Demo with prometheus and jwt
 
 
+### jwt
 
+```bash
+# get token
+curl 127.0.0.1:8080/login
+
+# get username by token
+curl 127.0.0.1:8080/users -H 'Authorization Bearer xxxxx'
+```
+
+### prometheus metrics
 接入 jvm 示例：
 ```bash
 # application.properties
